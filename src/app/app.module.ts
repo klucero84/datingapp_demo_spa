@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 
 // add all new services here
 import { AuthService } from './_services/auth.service';
+import { ErrorInterceptorProvider } from './_services/error.interceptor';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AuthService } from './_services/auth.service';
    ],
    // add all new services here
    providers: [
-      AuthService
+      AuthService,
+      ErrorInterceptorProvider
    ],
    bootstrap: [
       AppComponent
