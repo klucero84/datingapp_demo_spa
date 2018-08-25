@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
-import { BsDropdownModule } from 'ngx-bootstrap'
+import { BsDropdownModule } from 'ngx-bootstrap';
 
  // add all new components here
 import { AppComponent } from './app.component';
