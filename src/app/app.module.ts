@@ -18,6 +18,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { AlertifyService } from './_services/alertify.service';
+import { UserService } from './_services/user.service';
 
 import { appRoutes } from './routes';
 import { AuthGuard } from './_guards/auth.guard';
@@ -46,7 +47,8 @@ import { AuthGuard } from './_guards/auth.guard';
       AuthService,
       ErrorInterceptorProvider,
       AlertifyService,
-      AuthGuard
+      AuthGuard,
+      UserService
    ],
    bootstrap: [
       AppComponent
