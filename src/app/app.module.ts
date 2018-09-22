@@ -21,6 +21,7 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 
 // add all new services here
 import { AuthService } from './_services/auth.service';
@@ -36,6 +37,7 @@ import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { ListsResolver } from './_resolvers/lists.resolver';
+import { MessagesResolver } from './_resolvers/messages.resolver';
 
 export function tokenGetter() {
     return localStorage.getItem('token');
@@ -56,7 +58,8 @@ export function tokenGetter() {
       ListsComponent,
       MessagesComponent,
       PhotoEditorComponent,
-      TimeAgoPipe
+      TimeAgoPipe,
+      MemberMessagesComponent
    ],
    imports: [
       BrowserModule,
@@ -90,6 +93,7 @@ export function tokenGetter() {
       MemberListResolver,
       MemberEditResolver,
       ListsResolver,
+      MessagesResolver,
       PreventUnsavedChanges
    ],
    bootstrap: [
